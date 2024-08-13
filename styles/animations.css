@@ -1,0 +1,113 @@
+/* Опишите в этом файле все keyframes для проекта и стили анимаций иконки Like.
+
+Будьте внимательны! Для корректной работы скриптов на этом сайте нужно, чтобы в HTML некоторые классы были названы особым образом:
+✦ theme-dark — класс тёмной темы
+✦ theme-light — класс светлой темы
+✦ like-icon — для svg-иконки анимированного сердца
+✦ card__like-button — для кнопки Like рядом с иконкой
+✦ card__icon-button — для кнопки, оборачивающей иконку
+✦ card__icon-button — для кнопки, оборачивающей иконку
+✦ is-liked — для обозначения состояния лайкнутой иконки в виде сердца
+✦ button__text — для обозначения текстового элемента внутри кнопки
+
+Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
+*/
+
+/* Анимация для стрелки */
+
+@keyframes arrow-move {
+    0% {
+      margin-left: -20px;
+    }
+    100% {
+      margin-left: -16px;
+    }
+  }
+
+
+/* Анимация сердечка */
+.like-icon .core,
+.like-icon .main-body {
+    fill: var(--main-color);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.like-icon .main-body {
+    transition-delay: 0.05s;
+}
+
+.like-icon:hover .core {
+    opacity: 1;
+    transition: fill 0.3s;
+
+}
+
+.like-icon:hover .main-body {
+    opacity: 1;
+    transition-delay: 0.05s;
+}
+
+.like-icon:not(:hover) .core {
+    opacity: 0;
+    transition-delay: 0.03s;
+}
+
+.like-icon:not(:hover) .main-body {
+    opacity: 0;
+    transition-delay: 0s;
+}
+
+.like-icon:active .main-body,
+.like-icon:active .core {
+    fill: var(--heart-color);
+    transition: fill 0.3s;
+    transition-delay: 0.05s;
+}
+
+/* Клик */
+.like-icon.is-liked .core {
+    fill: var(--heart-color);
+    opacity: 1;
+    transition-delay: 0s;
+}
+
+.like-icon.is-liked .main-body {
+    fill: var(--heart-color);
+    opacity: 1;
+    transition-delay: 0.06s;
+}
+
+.like-icon.is-liked .contour {
+    fill: var(--heart-color);
+    transition-delay: 0.12s;
+    transition-duration: 0.3s;
+}
+
+.like-icon.is-liked .heart {
+    transform-origin: center;
+    animation: scaleHeart 0.3s 0.1s ease-in;
+}
+
+.like-icon.is-liked .sparks {
+    animation: sparkFade 0.3s ease-in 0.3s;
+}
+
+@keyframes scaleHeart {
+    from {
+        transform: scale(1);
+      }
+    
+      to {
+        transform: scale(1.5);
+      }
+}
+
+@keyframes sparkFade {
+    from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+}

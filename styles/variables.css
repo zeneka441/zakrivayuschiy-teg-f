@@ -1,0 +1,32 @@
+/* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+    --background-color: #FFFFFF;
+    --main-color: #000;
+
+    --main-font: 'Inter-Variable';
+    --main-font-weight: 400;
+    --main-font-size: 18px;
+    --main-font-line-height: 21px;
+    --header-font-weight: 700;
+    --header-font-line-height: 21.78px;
+
+
+    --accent-font: 'PressStart2P';
+
+
+    /* Фон */
+
+    --main-bg-color-light: #d3d3d3;
+    --main-bg-color-dark: #000;
+    --bg-gradient-start-light: #e7e7e7;
+    --bg-gradient-end-light: #1a1a1a;
+    --bg-gradient-start-dark: #007f0c;
+    --bg-gradient-end-dark: #004306;
+
+    /* Иконка сердечко */
+    --heart-color: #FF0000;
+    
+
+   }
+
+     
