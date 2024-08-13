@@ -89,6 +89,7 @@
 }
 
 .theme-menu__button {
+  position: relative;
   text-transform: uppercase;
   border: none;
   background-color: transparent;
@@ -98,6 +99,8 @@
   content: '▶';
   position: absolute;
   margin-left: -20px;
+  top: 50%;
+  transform: translateY(-50%);
   animation: arrow-move 0.5s ease-in-out infinite alternate;
 }
 
@@ -190,13 +193,12 @@
   gap: 27px;
 }
 
-.content-section__text:nth-child(1) {
-  margin-right: -2px;
+.content-section__text {
+  margin-bottom: 27px;
 }
 
-.content-section__text:nth-child(2) {
-  margin-top: 27px;
-  margin-bottom: 28px;
+.content-section__text:last-child {
+  margin-bottom: 0;
 }
 
 /* Кнопки */
@@ -207,6 +209,7 @@
   font-size: 14px;
   align-items: center;
   gap: 4px;
+  margin-top: 28px;
 }
 
 /* Сердечко */
