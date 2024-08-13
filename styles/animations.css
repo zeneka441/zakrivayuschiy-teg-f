@@ -26,6 +26,7 @@
 
 
 /* Анимация сердечка */
+
 .like-icon .core,
 .like-icon .main-body {
     fill: var(--main-color);
@@ -98,7 +99,7 @@
         transform: scale(1);
       }
     
-      to {
+    to {
         transform: scale(1.5);
       }
 }
@@ -107,7 +108,7 @@
     from {
         opacity: 0;
       }
-      to {
+    to {
         opacity: 1;
       }
 }
