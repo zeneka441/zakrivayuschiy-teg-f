@@ -17,15 +17,13 @@
 .page {
   min-block-size: 100vh;
   font-family: var(--main-font, sans-serif);
-  font-variation-settings: 'wght' var(--main-font-weight);
+  font-variation-settings: "wght" var(--main-font-weight);
   color: var(--main-color);
   font-size: var(--main-font-size);
   line-height: var(--main-font-line-height);
   /* Градиентный фон */
-  background-image:
-    repeating-linear-gradient(90deg, var(--main-bg-color-light) 0, var(--main-bg-color-light) 2px, transparent 2px, transparent 4px),
-    repeating-linear-gradient(0deg, var(--main-bg-color-light) 0, var(--main-bg-color-light) 2px, transparent 2px, transparent 4px),
-    linear-gradient(180deg, var(--bg-gradient-start-light) 0.01%, var(--bg-gradient-end-light) 100%);
+  background-image: repeating-linear-gradient(90deg, var(--main-bg-color-light) 0, var(--main-bg-color-light) 2px, transparent 2px, transparent 4px),
+      repeating-linear-gradient(0deg, var(--main-bg-color-light) 0, var(--main-bg-color-light) 2px, transparent 2px, transparent 4px), linear-gradient(180deg, var(--bg-gradient-start-light) 0.01%, var(--bg-gradient-end-light) 100%);
   background-size: cover;
   background-attachment: fixed;
   display: flex;
@@ -68,7 +66,6 @@
 .header-section__subtitle {
   margin-top: 42px;
   font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
-
 }
 
 .header__theme-menu {
@@ -96,7 +93,7 @@
 }
 
 .theme-menu__button:disabled::before {
-  content: '▶';
+  content: "▶";
   position: absolute;
   margin-left: -20px;
   top: 50%;
@@ -111,7 +108,7 @@
 }
 
 .theme-menu__button::after {
-  content: '';
+  content: "";
   display: block;
   width: 0%;
   height: 2px;
@@ -143,7 +140,7 @@
 }
 
 .content-section__title {
-  font-variation-settings: 'wght' var(--header-font-weight);
+  font-variation-settings: "wght" var(--header-font-weight);
   line-height: var(--header-font-line-height);
   font-size: var(--main-font-size);
   padding: 5px 0 5px 10px;
@@ -164,20 +161,17 @@
   opacity: 50%;
   font-size: 14px;
   z-index: 5;
-  text-shadow: 1px 1px 0 var(--background-color), 
-              -1px -1px 0 var(--background-color), 
-              1px -1px 0 var(--background-color),
-              -1px 1px 0 var(--background-color);
+  text-shadow: 1px 1px 0 var(--background-color), -1px -1px 0 var(--background-color), 1px -1px 0 var(--background-color), -1px 1px 0 var(--background-color);
 }
 
 /* Фолбек для -webkit-text-stroke */
 @supports ((text-stroke: 1px var(--background-color)) or (-webkit-text-stroke: 1px var(--background-color))) {
   .image_label {
-    -webkit-text-stroke: 1px var(--background-color);
-    text-stroke: 1px 1px 0 var(--background-color);
-    text-shadow: none;
+      -webkit-text-stroke: 1px var(--background-color);
+      text-stroke: 1px 1px 0 var(--background-color);
+      text-shadow: none;
   }
-} 
+}
 
 .card_image {
   display: block;
@@ -258,7 +252,6 @@
   z-index: 1;
   color: var(--button-text-color);
   mix-blend-mode: difference;
-
 }
 
 /* Анимации кнопок */
@@ -279,7 +272,7 @@
 .card__like-button::before,
 .footer__save-button:before,
 .dialog__button:before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: -100%;
@@ -298,7 +291,7 @@
 
 /* Фильтры для картинок */
 .filter_combined {
-  filter: sepia(0.1) contrast(2) brightness(150%)
+  filter: sepia(0.1) contrast(2) brightness(150%);
 }
 
 .filter_grayscale {
@@ -323,8 +316,7 @@
 
 .filer_hue-rotate {
   filter: hue-rotate(60deg);
-} 
-
+}
 
 /* Футер */
 .footer {
@@ -413,51 +405,49 @@
 /* Медиазапросы <= 375px */
 
 @media (max-width: 375px) {
-
   .header {
-    inline-size: 100%;
-    align-items: center;
-    height: 327px;
+      inline-size: 100%;
+      align-items: center;
+      height: 327px;
   }
 
   .footer__save-button {
-    flex-direction: column;
+      flex-direction: column;
   }
 
   .header__title {
-    margin-top: 134px;
-
+      margin-top: 134px;
   }
   .header-section__subtitle {
-    margin-top: 31px;
+      margin-top: 31px;
   }
 
   .header__theme-menu {
-    margin: 17px 0 0px 22px;
+      margin: 17px 0 0px 22px;
   }
 
   .main {
-    inline-size: 100%;
+      inline-size: 100%;
   }
 
   .content {
-    width: 100%;
+      width: 100%;
   }
 
   .content-section__title {
-    padding: 5px 10px 4px 10px;
+      padding: 5px 10px 4px 10px;
   }
 
   .image-section {
-    height: 375px;
+      height: 375px;
   }
 
   .content-section__text:nth-child(2) {
-    margin-bottom: 23px;
+      margin-bottom: 23px;
   }
 
   .button__icon {
-    width: 28px;
-    height: 28px;
+      width: 28px;
+      height: 28px;
   }
 }

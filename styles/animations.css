@@ -17,13 +17,12 @@
 
 @keyframes arrow-move {
     0% {
-      margin-left: -20px;
+        margin-left: -20px;
     }
     100% {
-      margin-left: -16px;
+        margin-left: -16px;
     }
-  }
-
+}
 
 /* Анимация сердечка */
 
@@ -41,7 +40,6 @@
 .like-icon:hover .core {
     opacity: 1;
     transition: fill 0.3s;
-
 }
 
 .like-icon:hover .main-body {
@@ -97,18 +95,18 @@
 @keyframes scaleHeart {
     from {
         transform: scale(1);
-      }
-    
+    }
+
     to {
         transform: scale(1.5);
-      }
+    }
 }
 
 @keyframes sparkFade {
     from {
         opacity: 0;
-      }
+    }
     to {
         opacity: 1;
-      }
+    }
 }
