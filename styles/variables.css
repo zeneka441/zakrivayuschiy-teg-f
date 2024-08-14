@@ -1,18 +1,16 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
-    --background-color: #FFFFFF;
+    --background-color: #ffffff;
     --main-color: #000;
 
-    --main-font: 'Inter-Variable';
+    --main-font: "Inter-Variable";
     --main-font-weight: 400;
     --main-font-size: 18px;
     --main-font-line-height: 21px;
     --header-font-weight: 700;
     --header-font-line-height: 21.78px;
 
-
-    --accent-font: 'PressStart2P';
-
+    --accent-font: "PressStart2P";
 
     /* Фон */
 
@@ -24,7 +22,5 @@
     --bg-gradient-end-dark: #004306;
 
     /* Иконка сердечко */
-    --heart-color: #FF0000;
-   }
-
-     
+    --heart-color: #ff0000;
+}

@@ -16,7 +16,7 @@
 
 .page {
   min-block-size: 100vh;
-  font-family: var(--main-font, sans-serif);
+  font-family: var(--main-font, sans-serif), sans-serif;
   font-variation-settings: "wght" var(--main-font-weight);
   color: var(--main-color);
   font-size: var(--main-font-size);
@@ -54,7 +54,7 @@
   min-height: 327px;
   background-color: var(--background-color);
   border: 2px solid var(--main-color);
-  font-family: var(--accent-font);
+  font-family: var(--accent-font, monospace), monospace;
   text-transform: uppercase;
 }
 
@@ -73,7 +73,6 @@
   font-size: 14px;
   display: flex;
   justify-content: center;
-  width: 100%;
 }
 
 .theme-menu__list {
@@ -83,6 +82,7 @@
   list-style: none;
   gap: 7px;
   text-align: left;
+  margin-left: 15px;
 }
 
 .theme-menu__button {
@@ -154,7 +154,7 @@
 }
 
 .image_label {
-  font-family: var(--accent-font);
+  font-family: var(--accent-font, monospace), monospace;
   position: absolute;
   right: 25px;
   top: 20px;
@@ -247,7 +247,7 @@
 .button__text,
 .button__icon {
   position: relative;
-  font-family: var(--accent-font);
+  font-family: var(--accent-font, monospace), monospace;
   font-size: 14px;
   z-index: 1;
   color: var(--button-text-color);
@@ -320,7 +320,6 @@
 
 /* Футер */
 .footer {
-  /* padding-top: 50px; */
   padding-bottom: 103px;
   display: flex;
   align-items: center;
@@ -369,7 +368,7 @@
   justify-content: center;
   align-items: center;
   gap: 18px;
-  font-family: var(--accent-font), monospace;
+  font-family: var(--accent-font, monospace), monospace;
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
@@ -406,9 +405,7 @@
 
 @media (max-width: 375px) {
   .header {
-      inline-size: 100%;
       align-items: center;
-      height: 327px;
   }
 
   .footer__save-button {
@@ -418,6 +415,7 @@
   .header__title {
       margin-top: 134px;
   }
+
   .header-section__subtitle {
       margin-top: 31px;
   }
@@ -426,24 +424,24 @@
       margin: 17px 0 0px 22px;
   }
 
-  .main {
-      inline-size: 100%;
-  }
-
-  .content {
-      width: 100%;
+  .theme-menu__list {
+    margin-left: 0px;
   }
 
   .content-section__title {
       padding: 5px 10px 4px 10px;
   }
 
+  .image_label {
+    right: 13px;
+  }
+
   .image-section {
       height: 375px;
   }
 
-  .content-section__text:nth-child(2) {
-      margin-bottom: 23px;
+  .content-section__text {
+    margin-bottom: 26px;
   }
 
   .button__icon {
